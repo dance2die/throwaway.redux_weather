@@ -1,11 +1,13 @@
 {
-  "name": "new",
+  "name": "redux-weather",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "axios": "0.18.0",
+    "lodash.round": "4.0.4",
+    "lodash.sum": "4.0.2",
     "prop-types": "15.6.2",
     "react": "16.3.2",
     "react-dom": "16.3.2",
