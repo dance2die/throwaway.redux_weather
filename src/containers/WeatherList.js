@@ -26,6 +26,7 @@ class WeatherList extends Component {
   };
 
   render() {
+    const { weather } = this.props;
     return (
       <table>
         <thead>
@@ -36,13 +37,16 @@ class WeatherList extends Component {
             <th>Humidity (%)</th>
           </tr>
         </thead>
-        <tbody>{this.props.weather.map(this.renderWeather)}</tbody>
+        <tbody>
+          {weather && weather.length > 0 && weather.map(this.renderWeather)}
+        </tbody>
       </table>
     );
   }
 }
 
 function mapStateToProps({ weather }) {
+  console.log(`weather`, weather);
   return { weather };
 }
 
